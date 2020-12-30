@@ -22,7 +22,7 @@ const IndexPage = ({ location }) => {
       </Helmet>
       <section className={pageStyles.mainSection}>
         <div className={pageStyles.intro}>
-          <p>Hi {sanitizedName}, I'm Dad.</p>
+          <h2>Hi {sanitizedName}, I'm Dad.</h2>
         </div>
       </section>
     </main>
