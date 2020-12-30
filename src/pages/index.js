@@ -15,6 +15,7 @@ const IndexPage = () => {
         }}
       >
          <title>Home Page</title>
+         <meta name="description" content="#SillySiteChallenge | built with Gatsby" />
       </Helmet>
      
       <section className={pageStyles.mainSection}>
