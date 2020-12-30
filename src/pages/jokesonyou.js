@@ -19,8 +19,9 @@ const IndexPage = ({ location }) => {
         }}
       >
          <title>Jokes On You Page</title>
+         <meta name="description" content="#SillySiteChallenge | built with Gatsby and with love of a future father" />
       </Helmet>
-      <section className={pageStyles.mainSection}>
+      <section className="mainSection">
         <div className={pageStyles.intro}>
           <h2>Hi {sanitizedName}, I'm Dad.</h2>
         </div>

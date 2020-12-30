@@ -69,7 +69,7 @@ textarea.question:focus {
 input.question:focus + label > span,
 input.question:valid + label > span {
   top: -100px;
-  left: 107px;
+  left: calc(50% - 96px);
   font-size: 22px;
 }
 
@@ -122,4 +122,23 @@ textarea.question + label > span {
   background-color: #1e1e1e;
   border-radius: 20px;
   margin-top: 5vh;
+}
+
+.mainSection {
+  text-align: center;
+  margin-top: 20vh;
+  margin: 15vh auto;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 400px) {
+  input.question {
+    font-size: 32px;
+  }
+  input.question + label > span {
+    font-size: 40px;
+  }
+  .mainSection {
+    max-width: calc(100% - 20px);
+  }
 }

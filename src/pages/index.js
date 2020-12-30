@@ -18,7 +18,7 @@ const IndexPage = () => {
          <meta name="description" content="#SillySiteChallenge | built with Gatsby" />
       </Helmet>
      
-      <section className={pageStyles.mainSection}>
+      <section className="mainSection">
         <div className={pageStyles.intro}>
           <h2>I am hungry.</h2>
           <h2>I am tired.</h2>
