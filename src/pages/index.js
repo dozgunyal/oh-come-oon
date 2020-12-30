@@ -10,9 +10,9 @@ const IndexPage = () => {
       <title>Home Page</title>
       <section className={pageStyles.mainSection}>
         <div className={pageStyles.intro}>
-          <p>I am hungry.</p>
-          <p>I am tired.</p>
-          <p>I am sad.</p>
+          <h2>I am hungry.</h2>
+          <h2>I am tired.</h2>
+          <h2>I am sad.</h2>
         </div>
         <form action="/jokesonyou">
           <input type="text" name="name" class="question" id="name" required autocomplete="off" />
