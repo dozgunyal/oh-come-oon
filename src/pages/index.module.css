@@ -6,10 +6,11 @@
 }
 
 .intro {
-  font-size: 48px;
   margin-bottom: 6vh;
 }
 
-.intro p {
+.intro h2 {
+  font-size: 48px;
+  font-weight: normal;
   margin: 10px;
 }

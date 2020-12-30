@@ -1,4 +1,6 @@
 import * as React from "react"
+import {Helmet} from 'react-helmet'
+
 import "fontsource-open-sans" // Defaults to weight 400 with all styles included.
 import pageStyles from "./index.module.css"
 
@@ -7,7 +9,14 @@ import pageStyles from "./index.module.css"
 const IndexPage = () => {
   return (
     <main>
-      <title>Home Page</title>
+      <Helmet
+        htmlAttributes={{
+          lang: 'en',
+        }}
+      >
+         <title>Home Page</title>
+      </Helmet>
+     
       <section className={pageStyles.mainSection}>
         <div className={pageStyles.intro}>
           <h2>I am hungry.</h2>
@@ -15,8 +24,8 @@ const IndexPage = () => {
           <h2>I am sad.</h2>
         </div>
         <form action="/jokesonyou">
-          <input type="text" name="name" class="question" id="name" required autocomplete="off" />
-          <label for="name"><span>What about you?</span></label>
+          <input type="text" name="name" className="question" id="name" required autoComplete="off" />
+          <label htmlFor="name"><span>What about you?</span></label>
           <button className="input-wrapper">Submit!</button>
         </form>
       </section>

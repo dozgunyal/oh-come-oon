@@ -1,4 +1,5 @@
 import * as React from "react"
+import {Helmet} from 'react-helmet'
 import "fontsource-open-sans" // Defaults to weight 400 with all styles included.
 import pageStyles from "./index.module.css"
 import * as queryString from "query-string";
@@ -12,7 +13,13 @@ const IndexPage = ({ location }) => {
 
   return (
     <main>
-      <title>Jokes On You Page</title>
+      <Helmet
+        htmlAttributes={{
+          lang: 'en',
+        }}
+      >
+         <title>Jokes On You Page</title>
+      </Helmet>
       <section className={pageStyles.mainSection}>
         <div className={pageStyles.intro}>
           <p>Hi {sanitizedName}, I'm Dad.</p>
