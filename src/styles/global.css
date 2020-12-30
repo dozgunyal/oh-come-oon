@@ -1,0 +1,125 @@
+body {
+  background-color: #1e1e1e;
+  color: #FFFFFF;
+  font-family: "Open Sans";
+}
+
+input,
+span,
+label,
+textarea {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  font-size: 22px;
+  color:  #FFFFFF;
+  text-align: center;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+/* Question */
+
+input.question,
+textarea.question {
+  font-size: 48px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+}
+/* Underline and Placeholder */
+
+input.question + label,
+textarea.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  border-top: 1px solid white;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus + label,
+textarea.question:focus + label {
+  width: 100%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 35px;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 35px;
+}
+
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -100px;
+  left: 107px;
+  font-size: 22px;
+}
+
+textarea.question:focus + label > span,
+textarea.question:valid + label > span {
+  top: -150px;
+  font-size: 22px;
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+textarea.question + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  font-size: 48px;
+  top: -66px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transition: left 0.2s ease, top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition:  left 0.2s ease,top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.input-wrapper {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2em;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.5em 2em;
+  border: 2px solid #ffffff;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  margin-top: 5vh;
+}
