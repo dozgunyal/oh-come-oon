@@ -56,6 +56,11 @@ textarea.question:focus + label {
   width: 100%;
 }
 
+input.question:valid + label,
+textarea.question:valid + label {
+  width: 100%;
+}
+
 input.question:focus,
 input.question:valid {
   padding-top: 35px;
@@ -93,8 +98,8 @@ textarea.question + label > span {
   top: -66px;
   left: 0px;
   z-index: -1;
-  -webkit-transition: left 0.2s ease, top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
-  transition:  left 0.2s ease,top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  -webkit-transition: top 0.2s ease,  left 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition:  top 0.2s ease, left 0.2s ease, font-size 0.2s ease, color 0.2s ease;
 }
 
 
